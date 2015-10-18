@@ -18,4 +18,9 @@ router.get('/purchase', function(req, res, next) {
   res.render('views/purchase', { title: 'Celia Brooks - Borough Market Hampers' });
 });
 
+router.get('/partials/:name', function (req, res) { 
+   var name = req.params.name;
+   res.render('partials/' + name + '.jade');
+});
+
 module.exports = router;
