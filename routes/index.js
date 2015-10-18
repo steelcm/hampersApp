@@ -14,4 +14,8 @@ router.get('/about', function(req, res, next) {
   res.render('views/about', { title: 'Celia Brooks - Borough Market Hampers' });
 });
 
+router.get('/purchase', function(req, res, next) {
+  res.render('views/purchase', { title: 'Celia Brooks - Borough Market Hampers' });
+});
+
 module.exports = router;

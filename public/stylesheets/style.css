@@ -52,7 +52,8 @@ ul.nav {
     padding: 0.5em; }
     ul.nav li.selected {
       padding-top: 1em;
-      padding-bottom: 1em; }
+      padding-bottom: 1em; 
+      z-index: 50;}
     ul.nav li .btn.btn-primary, ul.nav li .btn.btn-primary:hover {
       font-size: 26px;
       background-color: #f7941e;
@@ -138,7 +139,10 @@ html, body, .fill {
 form {
   background: white;
   padding: 1em; }
-  
+.large {
+    font-size: 22px;
+    line-height: 26px;
+}
 .fancy-italic
 {
   font-family: Lora, sans-serif;
@@ -158,10 +162,9 @@ form {
 
 .fancy-bold
 {
-  font-family: Lora, sans-serif;
-  color: white;
-  
-  font-weight: bold;
+  font-family: Lato, sans-serif;
+  color: white;  
+  font-weight: 900;
 }
 
 .overlay {
@@ -174,6 +177,10 @@ form {
   z-index: 50;
 }
 
+.overlay.higher {
+  z-index: 60;
+}
+
 .margin-bottom {
   margin-bottom: 50px;
 }
@@ -183,7 +190,12 @@ table {
 }
 
 .icon {
-  margin-top: 20px;
+  margin: 20px;
+  margin-left: 0;
+}
+
+.icon-no-bottom {
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
